@@ -1,97 +1,199 @@
-body {
-  background: #f0b5d5;
-  background: linear-gradient(328deg, #f0b5d5 0%, #98cddf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0b5d5",endColorstr="#98cddf",GradientType=1);
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #444; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
 
-.coming-soon-container {
-  width: 80%;
-  max-width: 800px;
-  background-color: #fff;
-  padding: 90px 70px; }
+audio, canvas, video {
+  display: inline-block; }
 
-.name {
-  background: #f0b5d5;
-  background: linear-gradient(328deg, #f0b5d5 0%, #98cddf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0b5d5",endColorstr="#98cddf",GradientType=1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 4rem;
-  font-weight: 500; }
+audio:not([controls]) {
+  display: none;
+  height: 0; }
 
-h3 {
-  margin-bottom: 50px; }
+[hidden] {
+  display: none; }
 
-p {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 1rem;
-  color: #aaa; }
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
-.social-icons {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: 01C 01D 018 019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0; }
 
-.social-icons a {
-  color: #BAC4DB;
-  font-size: 1.8rem;
-  margin: 20px;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in; }
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
 
-.social-icons li:hover i {
-  -webkit-animation: wiggle 2s infinite;
-          animation: wiggle 2s infinite;
-  color: #CDBED9; }
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
 
-.social-icons a:nth-of-type(1) {
-  margin-left: 0; }
+textarea {
+  overflow: auto;
+  vertical-align: top; }
 
-@-webkit-keyframes wiggle {
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+@-webkit-keyframes stroke {
   0% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg); }
-  25% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg); }
-  50% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  75% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg); }
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1800; }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1800; }
+  90% {
+    fill: rgba(255, 255, 255, 0); }
+  95% {
+    fill: rgba(255, 255, 255, 0.5); }
+  98% {
+    fill: rgba(255, 255, 255, 0.8); }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
+    opacity: 10;
+    fill: white;
+    stroke-dashoffset: 0; } }
 
-@keyframes wiggle {
+@keyframes stroke {
   0% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg); }
-  25% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg); }
-  50% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  75% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg); }
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1800; }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1800; }
+  90% {
+    fill: rgba(255, 255, 255, 0); }
+  95% {
+    fill: rgba(255, 255, 255, 0.5); }
+  98% {
+    fill: rgba(255, 255, 255, 0.8); }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
+    opacity: 10;
+    fill: white;
+    stroke-dashoffset: 0; } }
+
+header {
+  height: 100vh;
+  background: linear-gradient(42deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%); }
+
+path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 1800;
+  opacity: 10;
+  -webkit-animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1);
+          animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1); }
+
+.name {
+  width: 700px; }

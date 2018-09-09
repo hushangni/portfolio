@@ -1,0 +1,21 @@
+
+header {
+    height: 100vh;
+    background: -webkit-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    background: -moz-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    background: -o-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    background: -ms-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    background: linear-gradient(42deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%)
+}
+
+path {
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.name {
+    width: 700px;
+}

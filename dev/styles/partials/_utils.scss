@@ -1,0 +1,45 @@
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@keyframes stroke {
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    95% {
+        fill: rgba(255, 255, 255, 0.5);
+    }
+
+    98% {
+        fill: rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
