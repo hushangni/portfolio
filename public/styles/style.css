@@ -183,9 +183,39 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     fill: white;
     stroke-dashoffset: 0; } }
 
+@-webkit-keyframes show-info {
+  0% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg); }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); } }
+
+@keyframes show-info {
+  0% {
+    -webkit-transform: rotateY(120deg);
+            transform: rotateY(120deg); }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); } }
+
 header {
   height: 100vh;
-  background: linear-gradient(42deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%); }
+  background: #f0b5d5;
+  background: linear-gradient(328deg, #f0b5d5 0%, #98cddf 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 path {
   stroke: #fff;
@@ -197,3 +227,13 @@ path {
 
 .name {
   width: 700px; }
+
+#container {
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  overflow: hidden; }
+  #container canvas {
+    -webkit-transform: scale(1.85, 1.85);
+            transform: scale(1.85, 1.85); }

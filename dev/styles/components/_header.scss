@@ -1,11 +1,19 @@
 
 header {
     height: 100vh;
-    background: -webkit-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
-    background: -moz-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
-    background: -o-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
-    background: -ms-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
-    background: linear-gradient(42deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%)
+    // background: -webkit-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    // background: -moz-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    // background: -o-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    // background: -ms-linear-gradient(48deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    // background: linear-gradient(42deg, #aceeea 2%, #8fb8e2 53%, #ec8af9 98%);
+    background: rgb(240,181,213);
+    background: -moz-linear-gradient(328deg, rgba(240,181,213,1) 0%, rgba(152,205,223,1) 100%);
+    background: -webkit-linear-gradient(328deg, rgba(240,181,213,1) 0%, rgba(152,205,223,1) 100%);
+    background: linear-gradient(328deg, rgba(240,181,213,1) 0%, rgba(152,205,223,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 path {
@@ -18,4 +26,16 @@ path {
 
 .name {
     width: 700px;
+}
+
+#container {
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    overflow: hidden;
+
+    canvas {
+        transform: scale(1.85, 1.85);
+    }
 }
