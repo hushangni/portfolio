@@ -1,0 +1,7 @@
+$roundFont: 'Roboto', sans-serif;
+$longFont: 'Roboto Condensed', sans-serif;
+
+body {
+    @include fontSize(16);
+    letter-spacing: 0.1rem;
+}

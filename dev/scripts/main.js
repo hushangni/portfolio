@@ -1,11 +1,11 @@
 let ROWS = 25;
-let COLS = 35;
+let COLS = 30;
 var NUM_PARTICLES = ((ROWS) * (COLS)),
     THICKNESS = Math.pow(100, 2),
     SPACING = 8,
     MARGIN = 100,
     COLOR =500,
-    DRAG = 0.95,
+    DRAG = 0.85,
     EASE = 0.25,
     container,
     particle,
@@ -34,7 +34,7 @@ particle = {
 };
 
 const startDots = () => {
-    container = document.getElementById('container');
+    container = document.getElementById('floatdots-container');
     canvas = document.createElement('canvas');
 
     ctx = canvas.getContext('2d');
