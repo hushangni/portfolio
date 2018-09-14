@@ -14,9 +14,17 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
     display: block;
+}
+
+ul {
+    list-style: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {

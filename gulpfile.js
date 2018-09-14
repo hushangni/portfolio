@@ -58,10 +58,10 @@ gulp.task('bs', () => {
 
 // create a watch method to watch for any changes
 gulp.task('watch', () => {
-    // watch this path for changes, run these functions - array so you can add more later
-    gulp.watch('./dev/styles/**/*.scss', ['styles']);
+    // watch this path for changes, run these functions - array so you can add more late
     gulp.watch('./dev/scripts/**/*.js', ['js']);
     gulp.watch('*.html', reload);
+    gulp.watch('./dev/styles/**/*.scss', ['styles']);
 });
 
 // start browser sync first, then styles, then js, then use the watch task

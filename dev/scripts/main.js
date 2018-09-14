@@ -126,4 +126,9 @@ const step = () => {
 document.addEventListener("DOMContentLoaded", function () {
     startDots();
     step();
+    $('.nav-selection').on('click', function(e){
+        e.preventDefault();
+        $(`input[name=hamburger-menu]`).prop('checked', false);
+    })
+    $('a').smoothScroll();
 });

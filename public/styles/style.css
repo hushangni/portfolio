@@ -222,6 +222,46 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   100% {
     margin-top: -270px; } }
 
+@-webkit-keyframes scroll-icon {
+  0% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    opacity: 0; }
+  30%, 70% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+    opacity: 0; } }
+
+@keyframes scroll-icon {
+  0% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    opacity: 0; }
+  30%, 70% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+    opacity: 0; } }
+
+@-webkit-keyframes chevron {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes chevron {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 body {
   font-size: 16px;
   font-size: 1.6rem;
@@ -259,8 +299,8 @@ header {
   header label .menu {
     position: fixed;
     z-index: 100;
-    top: 30px;
-    right: 40px;
+    top: 40px;
+    right: 10vw;
     width: 60px;
     height: 60px;
     background: white;
@@ -302,6 +342,21 @@ header {
       background: #cb9ace; }
   header label input {
     display: none; }
+  header label .menu:hover {
+    -webkit-box-shadow: 0 0 0 1.5vw #FFF, 0 0 0 1.5vh #FFF;
+            box-shadow: 0 0 0 1.5vw #FFF, 0 0 0 1.5vh #FFF; }
+    header label .menu:hover .hamburger:after {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 26px;
+      left: -4px;
+      bottom: 0; }
+    header label .menu:hover .hamburger:before {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 26px;
+      left: 5px;
+      top: 0; }
   header label input:checked + .menu {
     background-color: #fff;
     -webkit-box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
@@ -323,10 +378,11 @@ header {
         left: 5px;
         top: 0; }
   header label input:checked + .menu + nav {
-    opacity: 1; }
+    opacity: 1;
+    z-index: 200; }
   header label nav {
-    z-index: 200;
-    position: absolute;
+    z-index: 0;
+    position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -347,14 +403,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none; }
-  header .tagline {
-    z-index: 2;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    font-size: 3.2rem;
-    position: relative; }
-  header path {
+  header .st0 {
     stroke: #fff;
     fill: #fff;
     stroke-dasharray: 1800;
@@ -362,8 +411,10 @@ header {
     -webkit-animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1);
             animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1); }
   header .name {
-    width: 700px;
-    z-index: 2; }
+    width: 60vw;
+    max-width: 700px;
+    z-index: 2;
+    min-width: 280px; }
   header #floatdots-container {
     background: transparent;
     position: absolute;
@@ -383,8 +434,15 @@ header {
     z-index: 5;
     text-align: left;
     position: relative;
-    left: -155px;
+    left: -10vw;
     top: -25px; }
+    header #flip-container .tagline {
+      z-index: 2;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      font-size: 3.2rem;
+      position: relative; }
     header #flip-container #flip {
       height: 50px;
       overflow: hidden;
@@ -400,13 +458,105 @@ header {
               animation: show 7s linear;
       -webkit-animation-delay: 3.5s;
               animation-delay: 3.5s; }
+  header .scroll-down-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 20; }
+    header .scroll-down-icon:hover .down-arrow1 {
+      -webkit-animation: chevron 2.5s infinite;
+              animation: chevron 2.5s infinite;
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s; }
+    header .scroll-down-icon:hover .down-arrow2 {
+      -webkit-animation: chevron 2.5s infinite;
+              animation: chevron 2.5s infinite;
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s; }
+    header .scroll-down-icon .down-arrow1 {
+      position: relative;
+      top: 5px; }
+    header .scroll-down-icon .down-arrow2 {
+      position: relative;
+      top: -10px; }
+    header .scroll-down-icon .scroll-icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 2em;
+      width: 1.2em;
+      font-size: 22px;
+      font-size: 2.2rem;
+      color: rgba(255, 255, 255, 0.5);
+      border-radius: 2em;
+      border: solid 3px;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    header .scroll-down-icon .scroll-icon:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #fff; }
+    header .scroll-down-icon .scroll-icon::after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      border-radius: 50%;
+      -webkit-animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+              animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1); }
+
+@media (max-width: 1080px) {
+  header #flip-container {
+    left: -12vw; }
+    header #flip-container .tagline {
+      font-size: 28px;
+      font-size: 2.8rem; } }
+
+@media (max-width: 830px) {
+  header #flip-container {
+    left: -13vw; }
+    header #flip-container .tagline {
+      font-size: 24px;
+      font-size: 2.4rem; } }
+
+@media (max-width: 650px) {
+  header #flip-container {
+    margin: 0 auto;
+    position: static;
+    text-align: center; } }
 
 html {
   font-size: 62.5%; }
 
+body {
+  scroll-behavior: smooth; }
+
 img {
   width: 100%;
   display: block; }
+
+ul {
+  list-style: none; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;

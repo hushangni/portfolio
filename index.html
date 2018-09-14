@@ -21,19 +21,19 @@
         <div class="wrapper">
             <!-- nav -->
             <label>
-                <input type="checkbox"></input>
+                <input type="checkbox" name="hamburger-menu"></input>
                 <span class="menu">
                     <span class="hamburger"></span>
                 </span>
                 <nav>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio" class="nav-selection">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about" class="nav-selection">About</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" class="nav-selection">Contact</a>
                     </li>
                 </nav>
             </label>
@@ -50,7 +50,7 @@
                     }
                 </style>
                 <g>
-                    <path class="st0" d="M152.9,120.3c-6.4-5.2-12.8-9-19.2-11.6c-6.4-2.5-12.6-3.8-18.6-3.8c-7.6,0-13.8,1.8-18.6,5.4
+                    <path class="st0 name-draw" d="M152.9,120.3c-6.4-5.2-12.8-9-19.2-11.6c-6.4-2.5-12.6-3.8-18.6-3.8c-7.6,0-13.8,1.8-18.6,5.4
                     c-4.8,3.6-7.2,8.3-7.2,14.1c0,4,1.2,7.3,3.6,9.9c2.4,2.6,5.6,4.9,9.5,6.8c3.9,1.9,8.3,3.6,13.2,5c4.9,1.4,9.8,2.9,14.6,4.5
                     c19.2,6.4,33.2,15,42.1,25.6c8.9,10.7,13.4,24.7,13.4,41.9c0,11.6-2,22.1-5.9,31.5c-3.9,9.4-9.6,17.5-17.1,24.1
                     c-7.5,6.7-16.7,11.9-27.6,15.6c-10.9,3.7-23.2,5.5-37,5.5c-28.6,0-55.1-8.5-79.5-25.5L43.7,222c8.8,7.8,17.5,13.6,26.1,17.4
@@ -112,18 +112,155 @@
         </div>
 
         <div class="scroll-down-icon">
-            <a href="#" class="scroll-icon"></a>
+            <a href="#portfolio" class="scroll-icon"></a>
+            <svg class="down-arrow1" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"
+                style="enable-background:new 0 0 100 100; fill:#fff" xml:space="preserve"><switch>
+                    <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                        x="0" y="0" width="1" height="1" />
+                    <g i:extraneous="self">
+                        <path d="M2.5,29.1c0-1.4,0.5-2.9,1.6-4c2.2-2.2,5.7-2.2,7.9,0L50,63l37.9-37.9c2.2-2.2,5.7-2.2,7.9,0c2.2,2.2,2.2,5.7,0,7.9    L54,74.9c-1.1,1.1-2.5,1.6-4,1.6c-1.5,0-2.9-0.6-4-1.6L4.1,33C3,31.9,2.5,30.5,2.5,29.1z"
+                        />
+                    </g>
+                </switch></svg>
+            <svg class="down-arrow2" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"
+                style="enable-background:new 0 0 100 100; fill:#fff" xml:space="preserve"><switch>
+                    <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                        x="0" y="0" width="1" height="1" />
+                    <g i:extraneous="self">
+                        <path d="M2.5,29.1c0-1.4,0.5-2.9,1.6-4c2.2-2.2,5.7-2.2,7.9,0L50,63l37.9-37.9c2.2-2.2,5.7-2.2,7.9,0c2.2,2.2,2.2,5.7,0,7.9    L54,74.9c-1.1,1.1-2.5,1.6-4,1.6c-1.5,0-2.9-0.6-4-1.6L4.1,33C3,31.9,2.5,30.5,2.5,29.1z"
+                        />
+                    </g>
+                </switch></svg>
         </div>
-
     </header><!-- header ends -->
 
 
     <!-- main -->
     <main>
-        <!-- projects -->
-        <section class="projects">
+        <!-- portfolio -->
+        <section class="portfolio wrapper" id="portfolio">
+            <ul class="projects">
+                <li class="project phrasebook">
+                    <div class="project-pic-container">
+                        <div class="project-pic">
 
-        </section><!-- projects end -->
+                        </div>
+                        <div class="device-pic">
+
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <h3 class="project-name">Phrasebook</h3>
+                        <p class="project-desc"></p>
+                        <ul class="tools-used">
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>API</li>
+                            <li>Vanilla JS</li>
+                            <li>Sass</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="project juicy-jostle">
+                    <div class="project-pic-container">
+                        <div class="project-pic">
+
+                        </div>
+                        <div class="device-pic">
+
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <h3 class="project-name">Juicy Jostle</h3>
+                        <p class="project-desc"></p>
+                        <ul class="tools-used">
+                            <li>Firebase</li>
+                            <li>jQuery</li>
+                            <li>Sass</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="project beer-bible">
+                    <div class="project-pic-container">
+                        <div class="project-pic">
+
+                        </div>
+                        <div class="device-pic">
+
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <h3 class="project-name">Beer Bible</h3>
+                        <p class="project-desc"></p>
+                        <ul class="tools-used">
+                            <li>Pair Programming</li>
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>APIs</li>
+                            <li>Vanilla JS</li>
+                            <li>Sass</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="project initidate">
+                    <div class="project-pic-container">
+                        <div class="project-pic">
+
+                        </div>
+                        <div class="device-pic">
+
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <h3 class="project-name">Initidate</h3>
+                        <p class="project-desc"></p>
+                        <ul class="tools-used">
+                            <li>Pair Programming</li>
+                            <li>APIs</li>
+                            <li>Vanilla JS</li>
+                            <li>Sass</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="project sunshine">
+                    <div class="project-pic-container">
+                        <div class="project-pic">
+
+                        </div>
+                        <div class="device-pic">
+
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <h3 class="project-name">Sunshine</h3>
+                        <p class="project-desc"></p>
+                        <ul class="tools-used">
+                            <li>PSD</li>
+                            <li>Multipage</li>
+                            <li>Vanilla JS</li>
+                            <li>Sass</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </section><!-- portfolio end -->
 
         <!-- skills -->
         <section class="skills">
@@ -153,9 +290,9 @@
     </footer><!-- footer ends -->
 
     <!-- load in scripts -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src='https://gist.github.com/mrdoob/838785/raw/a19a753b441d6ad41707c58f06dbe17f3470423c/RequestAnimationFrame.js'></script>
-    <script src='https://raw.github.com/mrdoob/stats.js/master/build/stats.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="./public/scripts/main.js"></script>
 </body>
 </html>
