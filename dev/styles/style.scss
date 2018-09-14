@@ -5,6 +5,7 @@
 
 // Components
 @import "components/header";
+@import "components/portfolio";
 @import "components/about";
 @import "components/footer";
 
@@ -27,6 +28,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -42,6 +47,7 @@ ul {
 
 .wrapper {
     width: 80%;
-    max-width: 1080px;
+    max-width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
