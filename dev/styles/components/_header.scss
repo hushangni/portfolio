@@ -302,11 +302,18 @@ header {
     header {
         #flip-container {
             left: -13vw;
-
             .tagline {
                 @include fontSize(24);
             }
+        }
 
+        #floatdots-container {
+            left: 35%;
+            canvas {
+                transform: scale(1.55, 1.55);
+                height: 400px;
+                width: 400px;
+            }
         }
     }
 }
@@ -317,7 +324,10 @@ header {
             margin: 0 auto;
             position: static;
             text-align: center;
+        }
 
+        #floatdots-container {
+            display: none;
         }
     }
 
