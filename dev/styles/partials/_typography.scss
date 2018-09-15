@@ -20,9 +20,18 @@ h2 {
 h3 {
     @include fontSize(30);
     margin-bottom: 10px;
+    color: black;
+}
+
+h4 {
+    @include fontSize(15);
+    font-family: $longFont;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .project-desc {
     @include fontSize(14);
-    margin-top: 25px;
+    margin-top: 10px;
 }

@@ -131,4 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $(`input[name=hamburger-menu]`).prop('checked', false);
     })
     $('a').smoothScroll();
+    AOS.init({
+        duration: 900,
+    });
 });

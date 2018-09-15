@@ -10,6 +10,8 @@
         crossorigin="anonymous">
     <!-- link to google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700" rel="stylesheet">
+    <!-- link to animate on scroll -->
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
     <!-- link to stylesheet -->
     <link rel="stylesheet" href="./public/styles/style.css">
 </head>
@@ -119,7 +121,7 @@
                     <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
                         x="0" y="0" width="1" height="1" />
                     <g i:extraneous="self">
-                        <path d="M2.5,29.1c0-1.4,0.5-2.9,1.6-4c2.2-2.2,5.7-2.2,7.9,0L50,63l37.9-37.9c2.2-2.2,5.7-2.2,7.9,0c2.2,2.2,2.2,5.7,0,7.9    L54,74.9c-1.1,1.1-2.5,1.6-4,1.6c-1.5,0-2.9-0.6-4-1.6L4.1,33C3,31.9,2.5,30.5,2.5,29.1z"
+                        <path class="down1" d="M2.5,29.1c0-1.4,0.5-2.9,1.6-4c2.2-2.2,5.7-2.2,7.9,0L50,63l37.9-37.9c2.2-2.2,5.7-2.2,7.9,0c2.2,2.2,2.2,5.7,0,7.9    L54,74.9c-1.1,1.1-2.5,1.6-4,1.6c-1.5,0-2.9-0.6-4-1.6L4.1,33C3,31.9,2.5,30.5,2.5,29.1z"
                         />
                     </g>
                 </switch></svg>
@@ -129,7 +131,7 @@
                     <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
                         x="0" y="0" width="1" height="1" />
                     <g i:extraneous="self">
-                        <path d="M2.5,29.1c0-1.4,0.5-2.9,1.6-4c2.2-2.2,5.7-2.2,7.9,0L50,63l37.9-37.9c2.2-2.2,5.7-2.2,7.9,0c2.2,2.2,2.2,5.7,0,7.9    L54,74.9c-1.1,1.1-2.5,1.6-4,1.6c-1.5,0-2.9-0.6-4-1.6L4.1,33C3,31.9,2.5,30.5,2.5,29.1z"
+                        <path class="down2" d="M2.5,29.1c0-1.4,0.5-2.9,1.6-4c2.2-2.2,5.7-2.2,7.9,0L50,63l37.9-37.9c2.2-2.2,5.7-2.2,7.9,0c2.2,2.2,2.2,5.7,0,7.9    L54,74.9c-1.1,1.1-2.5,1.6-4,1.6c-1.5,0-2.9-0.6-4-1.6L4.1,33C3,31.9,2.5,30.5,2.5,29.1z"
                         />
                     </g>
                 </switch></svg>
@@ -145,128 +147,136 @@
             <ul class="projects">
                 <li class="project phrasebook">
                     <div class="project-pic-container">
-                        <div class="dots-pic">
+                        <div class="dots-pic" data-aos="fade-up">
                             <img src="./assets/dots.png" alt="">
                         </div>
-                        <div class="device-pic">
+                        <div class="device-pic" data-aos="fade-up">
                             <div class="overlay">
                                 <div class="overlay-links">
                                     <a href="https://phrasebook-82943.firebaseapp.com/" target="_blank">Live</a>
-                                    <a href="https://github.com/hushangni/shangnihu_project5" target="_blank">Github</a>
+                                    <a href="https://github.com/hushangni/phrasebook" target="_blank">Github</a>
                                 </div>
                             </div>
-                            <img src="/assets/pb-imac-mockup-area.jpg" alt="imac floating on an angle, with light green and yellow gradients, project Phrasebook displayed on screen">
+                            <img src="/assets/pb-imac-mockup-area.jpg" alt="imac floating on an angle, with light green and yellow gradients, project Phrasebook displayed on screen" >
                         </div>
-                        <div class="project-pic">
+                        <div class="project-pic" data-aos="fade-up">
                             <img src="/assets/pb-header-crop.png" alt="">
                         </div>
                     </div>
 
-                    <div class="project-description-container">
+                    <div class="project-description-container" data-aos="fade-left">
                         <h3 class="project-name">Phrasebook</h3>
                         <span class="horizontal-line"></span>
-                        <p class="project-desc">A React, Firebase translation application. Translate phrases into the language of your choice, login to save your own books for on the go use. </p>
-                        <!-- <ul class="tools-used">
-                            <li>React</li>
-                            <li>Firebase</li>
-                            <li>API</li>
-                            <li>Vanilla JS</li>
-                            <li>Sass</li>
-                            <li>HTML5</li>
-                        </ul> -->
+                        <h4>React | Firebase | APIs | Javascript | Sass | HTML5</h4>
+                        <p class="project-desc">A language translation application. Translate phrases into the language of your choice, login to save your own books for on the go use. </p>
                     </div>
                 </li>
 
                 <li class="project juicy-jostle">
                     <div class="project-pic-container">
-                        <div class="project-pic">
-
+                        <div class="dots-pic" data-aos="fade-up">
+                            <img src="./assets/dots.png" alt="">
                         </div>
-                        <div class="device-pic">
-
+                        <div class="device-pic" data-aos="fade-up">
+                            <div class="overlay">
+                                <div class="overlay-links">
+                                    <a href="http://shangnihu.com/juicy-jostle/" target="_blank">Live</a>
+                                    <a href="https://github.com/hushangni/juicy-jostle" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <img src="/assets/jj-mockup-iphones.jpg" alt="imac floating on an angle, with light green and yellow gradients, project Phrasebook displayed on screen">
+                        </div>
+                        <div class="project-pic" data-aos="fade-up">
+                            <img src="/assets/jj-header-crop.png" alt="">
                         </div>
                     </div>
 
-                    <div class="project-description-container">
-                        <h3 class="project-name">Juicy Jostle</h3>
-                        <p class="project-desc"></p>
-                        <ul class="tools-used">
-                            <li>Firebase</li>
-                            <li>jQuery</li>
-                            <li>Sass</li>
-                            <li>HTML5</li>
-                        </ul>
+                    <div class="project-description-container" data-aos="fade-right">
+                        <a href="http://shangnihu.com/juicy-jostle/"><h3 class="project-name">Juicy Jostle</h3></a>
+                        <span class="horizontal-line"></span>
+                        <h4>Firebase | jQuery | Sass | HTML5 | Photoshop</h4>
+                        <p class="project-desc">Fruit tile match game. Similar to 2048. Slide the tiles around to create matches. Can you beat the top times on the leaderboard?</p>
                     </div>
                 </li>
 
                 <li class="project beer-bible">
                     <div class="project-pic-container">
-                        <div class="project-pic">
-
+                        <div class="dots-pic" data-aos="fade-up">
+                            <img src="./assets/dots.png" alt="">
                         </div>
-                        <div class="device-pic">
-
+                        <div class="device-pic" data-aos="fade-up">
+                            <div class="overlay">
+                                <div class="overlay-links">
+                                    <a href="https://beer-bible-553e1.firebaseapp.com/" target="_blank">Live</a>
+                                    <a href="https://github.com/hushangni/beer-bible" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <img src="/assets/bb-mockup-macbook.jpg" alt="Macbook on smokey background with a modal of beer information popped up.">
+                        </div>
+                        <div class="project-pic" data-aos="fade-up">
+                            <img src="/assets/bb-header-crop.png" alt="">
                         </div>
                     </div>
 
-                    <div class="project-description-container">
-                        <h3 class="project-name">Beer Bible</h3>
-                        <p class="project-desc"></p>
-                        <ul class="tools-used">
-                            <li>Pair Programming</li>
-                            <li>React</li>
-                            <li>Firebase</li>
-                            <li>APIs</li>
-                            <li>Vanilla JS</li>
-                            <li>Sass</li>
-                            <li>HTML5</li>
-                        </ul>
+                    <div class="project-description-container" data-aos="fade-left">
+                        <a href="https://beer-bible-553e1.firebaseapp.com/"><h3 class="project-name">Beer Bible</h3></a>
+                        <span class="horizontal-line"></span>
+                        <h4>React | Firebase | APIs | Javascript | Pair Programming | Sass | HTML5 | Client </h4>
+                        <p class="project-desc">Client request. For beer makers, allowing for search of recipes based on leftover ingredients, save recipes, and keep notes on each recipe upon authentication.</p>
                     </div>
                 </li>
 
                 <li class="project initidate">
                     <div class="project-pic-container">
-                        <div class="project-pic">
-
+                        <div class="dots-pic" data-aos="fade-up">
+                            <img src="./assets/dots.png" alt="">
                         </div>
-                        <div class="device-pic">
-
+                        <div class="device-pic" data-aos="fade-up">
+                            <div class="overlay">
+                                <div class="overlay-links">
+                                    <a href="http://shangnihu.com/initidate/" target="_blank">Live</a>
+                                    <a href="https://github.com/hushangni/initidate" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <img src="/assets/id-mockup-iphones.jpg" alt="4 iphones tetrised together on a yellow background, with different states of initidate app displayed on screens">
+                        </div>
+                        <div class="project-pic" data-aos="fade-up">
+                            <img src="/assets/id-header-crop.png" alt="">
                         </div>
                     </div>
 
-                    <div class="project-description-container">
-                        <h3 class="project-name">Initidate</h3>
-                        <p class="project-desc"></p>
-                        <ul class="tools-used">
-                            <li>Pair Programming</li>
-                            <li>APIs</li>
-                            <li>Vanilla JS</li>
-                            <li>Sass</li>
-                            <li>HTML5</li>
-                        </ul>
+                    <div class="project-description-container" data-aos="fade-right">
+                        <a href="http://shangnihu.com/initidate/"><h3 class="project-name">Initidate</h3></a>
+                        <span class="horizontal-line"></span>
+                        <h4> APIs | Javascript | Pair Programming | Sass | HTML5 | Photoshop</h4>
+                        <p class="project-desc">Date plan application for the indecisive soul. Initidate will recommend a movie and a drink pairing to make your night memorable.</p>
                     </div>
                 </li>
 
                 <li class="project sunshine">
                     <div class="project-pic-container">
-                        <div class="project-pic">
-
+                        <div class="dots-pic" data-aos="fade-up">
+                            <img src="./assets/dots.png" alt="">
                         </div>
-                        <div class="device-pic">
-
+                        <div class="device-pic" data-aos="fade-up">
+                            <div class="overlay">
+                                <div class="overlay-links">
+                                    <a href="https://hushangni.github.io/sunshine/" target="_blank">Live</a>
+                                    <a href="https://github.com/hushangni/sunshine" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <img src="/assets/ss-mockup-imac2.jpg" alt="White imac on sky blue background with vacation website sunshine displayed on screen.">
+                        </div>
+                        <div class="project-pic" data-aos="fade-up">
+                            <img src="/assets/ss-head-pic.png" alt="">
                         </div>
                     </div>
 
-                    <div class="project-description-container">
-                        <h3 class="project-name">Sunshine</h3>
-                        <p class="project-desc"></p>
-                        <ul class="tools-used">
-                            <li>PSD</li>
-                            <li>Multipage</li>
-                            <li>Vanilla JS</li>
-                            <li>Sass</li>
-                            <li>HTML5</li>
-                        </ul>
+                    <div class="project-description-container" data-aos="fade-left">
+                        <a href="https://hushangni.github.io/sunshine/"><h3 class="project-name">Sunshine</h3></a>
+                        <span class="horizontal-line"></span>
+                        <h4> Responsive Web Development | CSS3 | HTML5 | PSD Conversion</h4>
+                        <p class="project-desc">Multipage travel blog website, fully responsive across all devices, pixel perfect complete with engaging micro-interactions, and a working carousel.</p>
                     </div>
                 </li>
             </ul>
@@ -302,6 +312,7 @@
 
     <!-- load in scripts -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="./public/scripts/main.js"></script>
