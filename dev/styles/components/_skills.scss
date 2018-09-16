@@ -204,6 +204,9 @@
 @media (max-width: 650px) {
     .about-title {
         width: 97%;
+        text-shadow: 4px 4px 0px rgba(152,205,223,0.7),
+                    8px 8px 0px rgba(198, 194, 216, 0.7);
+        -webkit-text-stroke: 1px rgba(152,205,223,1);
     }
     .about {
 
@@ -249,11 +252,17 @@
 
         .picture-container {
             width: 95%;
-
         }
 
         .about-desc {
             padding: 10px 0 80px 0px;
+        }
+
+        .about-icons {
+            .about-icon {
+                @include fontSize(16);
+                margin: 30px 0;
+            }
         }
     }
 

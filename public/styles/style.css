@@ -923,7 +923,7 @@ header {
   .portfolio .section-title {
     color: white;
     text-shadow: -4px 4px 0px rgba(240, 181, 213, 0.7), -8px 8px 0px rgba(198, 194, 216, 0.7);
-    -webkit-text-stroke: 0.5px #f0b5d5; } }
+    -webkit-text-stroke: 1px #f0b5d5; } }
 
 @media (max-width: 450px) {
   .project {
@@ -1124,7 +1124,9 @@ header {
 
 @media (max-width: 650px) {
   .about-title {
-    width: 97%; }
+    width: 97%;
+    text-shadow: 4px 4px 0px rgba(152, 205, 223, 0.7), 8px 8px 0px rgba(198, 194, 216, 0.7);
+    -webkit-text-stroke: 1px #98cddf; }
   .about .picture-container {
     width: 80%; }
     .about .picture-container .face-pic {
@@ -1153,12 +1155,33 @@ header {
     width: 95%; }
   .about .about-desc {
     padding: 10px 0 80px 0px; }
+  .about .about-icons .about-icon {
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 30px 0; }
   .skills-list {
     grid-gap: 10px; }
   .skill-item {
     margin: 20px 0; }
     .skill-item span {
       font-size: 4.3rem; } }
+
+.contact .section-title {
+  margin-top: 60px;
+  color: white;
+  text-shadow: -6px 6px 0px rgba(198, 194, 216, 0.7), -12px 12px 0px rgba(240, 181, 213, 0.7);
+  -webkit-text-stroke: 0.5px #c6c2d8;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+  .contact .section-title:hover {
+    text-shadow: 0px 0px 0px rgba(240, 181, 213, 0.7), 0px 0px 0px rgba(198, 194, 216, 0.7);
+    -webkit-text-stroke: 1px #c6c2d8; }
+
+@media (max-width: 600px) {
+  .contact .section-title {
+    margin-top: 20px;
+    text-shadow: -4px 4px 0px rgba(198, 194, 216, 0.7), -8px 8px 0px rgba(240, 181, 213, 0.7);
+    -webkit-text-stroke: 1px #c6c2d8; } }
 
 html {
   font-size: 62.5%; }
