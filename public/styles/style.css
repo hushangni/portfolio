@@ -588,9 +588,7 @@ header {
   header #flip-container {
     margin: 0 auto;
     position: static;
-    text-align: center; }
-  header #floatdots-container {
-    display: none; } }
+    text-align: center; } }
 
 @media (max-width: 400px) {
   header #flip-container .tagline {
@@ -617,8 +615,7 @@ header {
             animation-delay: 3.5s; } }
 
 .portfolio {
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
   .portfolio .section-title {
     color: white;
     text-shadow: -6px 6px 0px rgba(240, 181, 213, 0.7), -12px 12px 0px rgba(198, 194, 216, 0.7);
@@ -972,7 +969,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 svg {
   max-height: 100%; }
