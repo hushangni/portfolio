@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,700" rel="stylesheet">
     <!-- link to animate on scroll -->
     <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+    <!-- link to devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- link to stylesheet -->
     <link rel="stylesheet" href="./public/styles/style.css">
 </head>
@@ -32,7 +34,7 @@
                         <a href="#portfolio" class="nav-selection">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#about" class="nav-selection">About</a>
+                        <a href="#about-skills" class="nav-selection">About</a>
                     </li>
                     <li>
                         <a href="#contact" class="nav-selection">Contact</a>
@@ -284,14 +286,133 @@
         </section><!-- portfolio end -->
 
         <!-- skills -->
-        <section class="skills">
 
-        </section><!-- skills ends -->
+        <div class="wrapper" id="about-skills">
+            <h2 class="section-title about-title">About</h2>
 
-        <!-- about -->
-        <section class="about">
+            <div class="about-skills">
+                <section class="skills">
+                    <ul class="skills-list">
+                        <li class="skill-item" data-aos="fade-right">
+                            <span>
+                                <i class="devicon-html5-plain"></i>
+                            </span>
+                            HTML5
+                        </li>
+                        <li class="skill-item" data-aos="fade-up">
+                            <span>
+                                <i class="devicon-css3-plain"></i>
+                            </span>
+                            CSS3
+                        </li>
+                        <li class="skill-item" data-aos="fade-left">
+                            <span>
+                                <i class="devicon-sass-original"></i>
+                            </span>
+                            Sass
+                        </li>
+                        <li class="skill-item" data-aos="fade-right">
+                            <span>
+                                <i class="devicon-javascript-plain"></i>
+                            </span>
+                            Javascript
+                        </li>
+                        <li class="skill-item" data-aos="zoom-in">
+                            <span>
+                                <i class="devicon-react-original"></i>
+                            </span>
+                            React
+                        </li>
+                        <li class="skill-item" data-aos="fade-left">
+                            <span>
+                                <svg  class="firebase" width="100px" height="100px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+                                    <title>logo_lockup_firebase_horizontal_knockout</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs></defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="styleguide" transform="translate(-1007.000000, -1313.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                                            <g id="Group-16" transform="translate(40.000000, 1187.000000)">
+                                                <g id="Group-9" transform="translate(114.000000, 0.000000)">
+                                                    <g id="Group-27" transform="translate(812.000000, 0.000000)">
+                                                        <g id="logo_lockup_firebase_horizontal_knockout" transform="translate(41.546961, 126.408840)">
+                                                            <path d="M1.6066989,43.8732883 L8.22720994,1.29197398 C8.32777924,0.643112236 8.82990599,0.131546879 9.47412157,0.0216238467 C10.1183371,-0.0882991861 10.7603352,0.228043208 11.0683702,0.807184472 L18.1864641,14.1675251 L1.6066989,43.8732883 Z M48.6187845,54.2065575 L42.3173343,15.0187697 C42.2221419,14.4559508 41.8224842,13.9935122 41.2812968,13.8199848 C40.7401094,13.6464574 40.147804,13.7908309 39.7458564,14.1942458 L0,54.2065575 L21.9924033,66.6011364 C23.3734166,67.3760485 25.0554508,67.3760485 26.4364641,66.6011364 L48.6187845,54.2065575 Z M30.7475829,20.0079026 L25.6540055,10.2624884 C25.3913218,9.76069235 24.8735865,9.44650145 24.3093923,9.44650145 C23.7451981,9.44650145 23.2274628,9.76069235 22.964779,10.2624884 L0.600138122,50.3435104 L30.7475829,20.0079026 Z"
+                                                                id="icon"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <!-- <span>
+                                <svg baseProfile="tiny" height="100px" id="Layer_1" version="1.2" viewBox="0 0 512 512" width="100px" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="firebase"><g>
+                                    <path d="M297.036,205.578l-36.334,33.809l-33.716-68.005l17.446-39.108c4.416-7.84,11.621-7.855,16.037,0   L297.036,205.578z"
+                                        fill="#fff" />
+                                    <polygon fill="#fff" points="260.702,239.386 124.924,365.697 226.986,171.381  " />
+                                    <path d="M336.776,153.901c6.491-6.239,13.202-4.111,14.912,4.729l35.342,205.375L269.873,434.22   c-4.1,2.264-14.957,3.246-14.957,3.246s-9.91-1.185-13.687-3.281L124.92,365.69L336.776,153.901z"
+                                        fill="#fff" />
+                                    <path d="M226.986,171.381L124.924,365.697l45.46-283.998c1.674-8.847,6.71-9.699,11.203-1.89L226.986,171.381z" fill="#fff"
+                                    />
+                                </g></svg>
+                            </span> -->
+                            Firebase
+                        </li>
+                        <li class="skill-item" data-aos="fade-right">
+                            <span>
+                                <i class="devicon-git-plain"></i>
+                            </span>
+                            Git
+                        </li>
+                        <li class="skill-item" data-aos="fade-down">
+                            <span>
+                                <i class="devicon-github-plain"></i>
+                            </span>
+                            Github
+                        </li>
+                        <li class="skill-item" data-aos="fade-left">
+                            <span>
+                                <i class="devicon-gulp-plain"></i>
+                            </span>
+                            Gulp
+                        </li>
+                    </ul>
 
-        </section><!-- about ends -->
+                </section><!-- skills ends -->
+
+                <!-- about -->
+                <section class="about">
+                    <div class="picture-container">
+                        <img src="/assets/dots.png" alt="" class="dots-pic" data-aos="fade-up">
+                        <img src="/assets/photo-redchair-smile.png" alt="" class="face-pic" data-aos="fade-up">
+                    </div>
+
+                    <ul class="about-icons">
+                        <li class="about-icon" data-aos="fade-left">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Toronto
+                        </li>
+                        <li class="about-icon" data-aos="fade-left">
+                            <i class="fas fa-briefcase"></i>
+                            Developer
+                        </li>
+                        <li class="about-icon" data-aos="fade-left">
+                            <i class="fas fa-heart"></i>
+                            Milk Tea
+                        </li>
+                    </ul>
+
+                    <div class="about-desc">
+                        <p><span class="hi">Hi</span> <i class="fas fa-hand-paper"></i> Thanks for stopping by. </p>
+                        <p>I'm a developer with a background in <span class="cogsci">Cognitive Science</span>, the science of how we think. I'm constantly injecting principles of "think" into my apps and sites by ways of <span class="span-list">accessibility</span>, <span class="span-list">user experience</span>, and new <span class="span-list">technologies</span>.</p>
+                        <p>In addition to my main skills I have built some small apps in <span class="ruby">Ruby</span> and <span class="python">Python</span>, check them out <a href="https://github.com/hushangni" class="desc-here">here <i class="fas fa-laugh-beam"></i></a></p>
+                    </div>
+
+                </section><!-- about ends -->
+            </div>
+        </div>
 
         <!-- contact -->
         <section class="contact">

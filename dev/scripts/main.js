@@ -124,12 +124,17 @@ const step = () => {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    // start animation for canvas dots in header
     startDots();
     step();
+
+    // close nav when a selection has been made
     $('.nav-selection').on('click', function(e){
         e.preventDefault();
         $(`input[name=hamburger-menu]`).prop('checked', false);
     })
+
+    // smooth scroll/slide in activations
     $('a').smoothScroll();
     AOS.init({
         duration: 900,
