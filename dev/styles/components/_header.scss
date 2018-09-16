@@ -332,3 +332,36 @@ header {
     }
 
 }
+
+@media(max-width: 400px) {
+    header {
+        #flip-container {
+            .tagline {
+                z-index: 2;
+                font-family: $longFont;
+                font-weight: 400;
+                @include fontSize(20);
+                position: relative;
+            }
+
+            #flip {
+                height:80px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #flip > div > div {
+                color:#fff;
+                padding:4px 12px;
+                height:45px;
+                margin-bottom:45px;
+                display:inline-block;
+            }
+
+            #flip div:first-child {
+                animation: show 7s linear;
+                animation-delay: 3.5s;
+            }
+        }
+    }
+}
