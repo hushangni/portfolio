@@ -26,12 +26,48 @@ header {
     }
 
     // hamburger nav styles
+    .social-icons {
+        position: absolute;
+        display: flex;
+        top: 36vh;
+        z-index: 100;
+        right: 250px;
+        width: 300px;
+
+        .fab {
+            color: white;
+            @include fontSize(25);
+            z-index: 100;
+        }
+
+        .fa-github:hover {
+            color: #333;
+        }
+
+        .fa-twitter:hover {
+            color: #4C9FEB;
+        }
+
+        .fa-instagram:hover {
+            color: #B83788;
+        }
+
+        .fa-linkedin-in:hover{
+            color: #3071AC;
+        }
+
+        .fa-medium-m:hover {
+            color: #52B57B;
+        }
+
+    }
+
     label {
         .menu {
             position: fixed;
             z-index: 100;
             top: 40px;
-            right: 4vw;
+            right: 15vw;
             width: 60px;
             height: 60px;
             background: white;
@@ -39,6 +75,7 @@ header {
             transition: .5s ease-in-out;
             box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
             cursor: pointer;
+
         }
 
         .hamburger {
@@ -287,8 +324,23 @@ header {
     }
 }
 
+@media (max-width: 1400px) {
+    header {
+        label {
+            .menu {
+                right: 6vw;
+            }
+        }
+    }
+}
+
 @media (max-width: 1080px) {
     header {
+        label {
+            .menu {
+                right: 5vw;
+            }
+        }
         #flip-container {
             left: -12vw;
 
@@ -301,6 +353,11 @@ header {
 
 @media (max-width: 830px) {
     header {
+        .social-icons {
+            right: 1%;
+            top: 30vh;
+        }
+
         #flip-container {
             left: -13vw;
             .tagline {

@@ -1,0 +1,216 @@
+.about-title {
+    color: white;
+    display: block;
+    text-align: right;
+    padding-top: 10px;
+    text-shadow: 6px 6px 0px rgba(152,205,223,0.7),
+                12px 12px 0px rgba(198, 194, 216, 0.7);
+    -webkit-text-stroke: 0.5px rgba(152,205,223,1);
+    transition: all 0.4s ease-in;
+
+    &:hover {
+        text-shadow: 0px 0px 0px rgba(152,205,223,0.7),
+                0px 0px 0px rgba(198, 194, 216, 0.7);
+        -webkit-text-stroke: 1px rgba(152,205,223, 1);
+    }
+}
+
+.about {
+    grid-area: about;
+    height: 100%;
+    // *{ border: 1px solid red; }
+
+    .picture-container {
+        width: 40%;
+        float: right;
+        position: relative;
+
+        * {
+            position: absolute;
+        }
+
+        .face-pic {
+            right: 50%;
+            top: 0px;
+            width: 65%;
+        }
+
+        .dots-pic {
+            width: 100%;
+            top: -20px;
+            left: -100px;
+        }
+
+
+    }
+
+    .about-icons {
+        margin: 0 auto 0;
+        text-align: left;
+        padding-top: 6%;
+        width: 80%;
+
+        .about-icon {
+            margin: 30px 0;
+            margin-left: 15%;
+            font-size: 2.6rem;
+            font-family: $longFont;
+            font-weight: 700;
+            color: #9aabd1;
+
+            i {
+                margin-right: 10px;
+                color: rgba(198, 194, 216, 1);
+            }
+        }
+    }
+
+    .about-desc {
+        padding: 30px 0 20px 30px;
+        width: 75%;
+        margin: 0 auto;
+
+        .fas {
+            color: #F6CF47;
+            font-size: 2rem;
+        }
+
+        span {
+            font-weight: 700;
+            color: #4261b7;
+        }
+
+        .hi {
+            color: black;
+            @include fontSize(22);
+        }
+
+        .ruby {
+            color: #A93637;
+        }
+
+        .python {
+            color: #44709F;
+        }
+
+        .desc-here {
+            font-weight: 700;
+            color: #4261b7;
+            transition: all 0.2s;
+
+            &:hover {
+                text-shadow: 1px 1px 0px rgba(152,205,223,0.7),
+                2px 2px 0px rgba(198, 194, 216, 0.7);
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+
+        .picture-container {
+            width: 70%;
+
+            .face-pic {
+                right: 100px;
+                top: 0px;
+                width: 45%;
+            }
+
+            .dots-pic {
+                width: 60%;
+                top: 0px;
+                left: 25%;
+            }
+        }
+
+        .about-icons {
+            margin: 50px auto 0;
+            text-align: left;
+            top: 0;
+            width: 100%;
+
+            .about-icon {
+                margin-left: 6%;
+            }
+        }
+
+        .about-desc {
+            padding: 10px 0 80px 0px;
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .about-title {
+        width: 97%;
+        text-shadow: 4px 4px 0px rgba(152,205,223,0.7),
+                    8px 8px 0px rgba(198, 194, 216, 0.7);
+        -webkit-text-stroke: 1px rgba(152,205,223,1);
+    }
+    .about {
+
+        .picture-container {
+            width: 80%;
+
+            .face-pic {
+                right: 50px;
+                top: 0px;
+                width: 45%;
+            }
+
+            .dots-pic {
+                width: 60%;
+                top: -20px;
+                left: 25%;
+            }
+
+        }
+
+        .about-icons {
+            margin: 0;
+            padding: 0;
+            top: 0;
+
+            .about-icon {
+                @include fontSize(20);
+                margin: 30px 0;
+                margin-left: 5%;
+            }
+        }
+
+        .about-desc {
+            width: 100%;
+            padding: 50px 0 80px 0px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .about-title {
+        width: 93%;
+    }
+    .about {
+
+        .picture-container {
+            width: 95%;
+
+            .face-pic {
+                right: 20px;
+            }
+        }
+
+        .about-desc {
+            padding: 20px 0 80px 0px;
+        }
+
+        .about-icons {
+            .about-icon {
+                @include fontSize(15);
+                margin: 30px 0;
+            }
+        }
+    }
+}
