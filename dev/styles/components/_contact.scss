@@ -220,6 +220,11 @@
     }
 
     .contact-form {
+        margin: 25px 0;
+        input,
+        textarea {
+            @include fontSize(16);
+        }
 
         .name-email-container {
             display: flex;

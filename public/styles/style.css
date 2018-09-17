@@ -1440,19 +1440,25 @@ header {
     color: #888;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; }
-  .contact-form .name-email-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .contact-form .name,
-  .contact-form .email {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0; } }
+  .contact-form {
+    margin: 25px 0; }
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 16px;
+      font-size: 1.6rem; }
+    .contact-form .name-email-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .contact-form .name,
+    .contact-form .email {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0; } }
 
 .thank-you {
   position: relative;
