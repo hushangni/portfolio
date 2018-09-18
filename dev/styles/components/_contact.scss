@@ -249,6 +249,10 @@
             height: 100px;
         }
 
+        .mailto {
+            @include fontSize(22);
+        }
+
         .name-email-container {
             display: flex;
             flex-direction: column;

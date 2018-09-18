@@ -384,8 +384,20 @@ header {
             text-align: center;
         }
 
-        #floatdots-container {
-            // display: none;
+            // hamburger nav styles
+        .social-icons {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            right: 0;
+            justify-content: space-around;
+            align-items: center;
+
+            .fab {
+                color: white;
+                @include fontSize(25);
+                z-index: 100;
+            }
         }
     }
 

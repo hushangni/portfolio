@@ -58,6 +58,10 @@ a {
     position: relative;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 @media (max-width: 820px) {
     .wrapper {
         width: 70%;
