@@ -56,10 +56,10 @@
 
 .back-to-home {
     color: white;
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+     @include fontSize(20);
 
     i {
         @include fontSize(35);
@@ -95,7 +95,7 @@
 }
 
 .contact-form {
-    width: calc(100%);
+    width: 100%;
     margin-top: 60px;
     margin-bottom: 60px;
 
@@ -106,9 +106,15 @@
     .mailto {
         color: white;
         @include fontSize(28);
-        font-weight: 700;
+        font-weight: 400;
         display: block;
+        width: 500px;
+        margin: 0 auto;
         margin-bottom: 30px;
+
+        span {
+            color: grey;
+        }
 
         &:hover {
             color: rgba(255, 255, 255, 0.7);
@@ -142,6 +148,7 @@
     textarea {
         background: transparent;
         margin-top: 10px;
+        padding: 10px;
         border-bottom: 2px solid white;
         @include fontSize(20);
         transition: all 0.5s ease-in;
@@ -162,26 +169,19 @@
     }
 
     .send {
-        margin-top: 20px;
-        background-color: #fff;
-        width: 30%;
-        float: right;
+        color: white;
+        width: 150px;
+        margin: 0 auto;
     }
 
     .send-button {
         width: 100%;
         padding: 10px 15px 15px;
         color: white;
-        background: rgb(240,181,213);
-        background: linear-gradient(328deg, rgba(191,141,193,1) 0%, rgba(132,176,211,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-decoration: none;
         transition: all 0.3s;
 
         &:hover {
-            -webkit-text-fill-color:black;
+            color: black;
         }
     }
 
@@ -264,7 +264,7 @@
         }
 
         .mailto {
-            @include fontSize(22);
+            @include fontSize(18);
         }
 
         .name-email-container {
@@ -281,13 +281,6 @@
 
     .back-to-home {
         color: white;
-        position: absolute;
-        left: 15px;
-        bottom: 35px;
-        transform: translateX(-50%);
-
-        i {
-            @include fontSize(35);
-        }
+        @include fontSize(18);
     }
 }
