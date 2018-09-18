@@ -3,9 +3,12 @@ header {
     position: relative;
     color: white;
     background: rgb(240,181,213);
-    background: -moz-linear-gradient(328deg, rgba(247,128,194,1) 0%, rgba(152,205,223,1) 100%);
+    background: -moz-linear-gradient(328deg, rgba(247,128,194,1) 0%, #C4C2D8 50%, rgba(152,205,223,1) 100%);
     background: -webkit-linear-gradient(328deg, rgba(240,181,213,1) 0%, rgba(152,205,223,1) 100%);
     background: linear-gradient(328deg, rgba(240,181,213,1) 0%, rgba(152,205,223,1) 100%);
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 
     .wrapper {
         display: flex;

@@ -262,6 +262,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   100% {
     opacity: 0; } }
 
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 @font-face {
   font-family: 'neontubes';
   src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
@@ -313,7 +329,9 @@ header {
   position: relative;
   color: white;
   background: #f0b5d5;
-  background: linear-gradient(328deg, #f0b5d5 0%, #98cddf 100%); }
+  background: linear-gradient(328deg, #f0b5d5 0%, #98cddf 100%);
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite; }
   header .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1600,7 +1618,8 @@ footer {
             align-items: center; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   scroll-behavior: smooth;
