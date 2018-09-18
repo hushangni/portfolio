@@ -18,9 +18,16 @@
     <link rel="stylesheet" href="./public/styles/style.css">
 </head>
 <body>
+    <div id="bagel-container" class="hide">
+        <div class="bagels bagels1"><img src="./assets/bens-bagels.png" alt=""></div>
+        <div class="bagels bagels2"><img src="./assets/bens-bagels.png" alt=""></div>
+        <div class="bagels bagels3"><img src="./assets/bens-bagels.png" alt=""></div>
+        <div class="bagels bagels4"><img src="./assets/bens-bagels.png" alt=""></div>
+        <div class="bagels bagels5"><img src="./assets/bens-bagels.png" alt=""></div>
+    </div>
 
     <!-- header -->
-    <header class="landing">
+    <header class="landing" id="home">
 
         <div class="background-overlay"></div>
         <div class="wrapper">
@@ -456,9 +463,9 @@
                         <div class="send">
                             <input class="send-button" type="submit" value="Send">
                         </div>
+                        <a href="#home" class="back-to-home"><i class="fas fa-home"></i></a>
                     </form>
                     <!-- end of form -->
-
                 </div>
 
 
@@ -479,4 +486,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script src="./public/scripts/main.js"></script>
 </body>
+
 </html>

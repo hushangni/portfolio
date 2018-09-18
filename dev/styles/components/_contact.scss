@@ -54,14 +54,32 @@
     color: #52B57B;
 }
 
+.back-to-home {
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+
+    i {
+        @include fontSize(35);
+
+        &:hover {
+            color: rgb(240,181,213);
+            animation: wiggle 1s infinite;
+        }
+    }
+}
+
 .contact {
+    // cursor: url("../../assets/contact-cursor.png"), auto;
     height: 100%;
     position: relative;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(240,181,213);
+    background: #fcdbf9;
     background: -moz-linear-gradient(328deg, #D8BCD6 0%, rgba(152,205,223,1) 100%);
     background: -webkit-linear-gradient(328deg, #D8BCD6 0%, rgba(152,205,223,1) 100%);
     background: linear-gradient(328deg, #D8BCD6 0%, rgba(152,205,223,1) 100%);
@@ -258,6 +276,18 @@
             width: 100%;
             padding-left: 0;
             padding-right: 0;
+        }
+    }
+
+    .back-to-home {
+        color: white;
+        position: absolute;
+        left: 15px;
+        bottom: 35px;
+        transform: translateX(-50%);
+
+        i {
+            @include fontSize(35);
         }
     }
 }

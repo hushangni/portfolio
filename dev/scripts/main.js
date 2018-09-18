@@ -123,6 +123,29 @@ const step = () => {
     requestAnimationFrame(step);
 }
 
+const pressed = [];
+const code = "bensbagels";
+// let frameCount = 0;
+
+const finishbagels = () => {
+    let bagel = document.getElementById("bagel-container");
+    bagel.className = "hide";
+}
+
+const trigger = () => {
+    setTimeout(
+        function () {
+            finishbagels();
+        }, 10000);
+}
+
+const startbagels = () => {
+    let bagel = document.getElementById("bagel-container");
+    bagel.className = "show";
+    trigger();
+
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // start animation for canvas dots in header
     startDots();
@@ -138,5 +161,15 @@ document.addEventListener("DOMContentLoaded", function () {
     $('a').smoothScroll();
     AOS.init({
         duration: 900,
+    });
+
+    //konamicode for bagels cohort19
+    window.addEventListener("keyup", function (e) {
+        pressed.push(e.key);
+        pressed.splice(-code.length - 1, pressed.length - code.length);
+
+        if (pressed.join("").includes(code)) {
+            startbagels();
+        }
     });
 });

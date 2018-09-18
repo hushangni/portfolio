@@ -18,6 +18,7 @@
 .about {
     grid-area: about;
     height: 100%;
+    cursor: url("../../assets/hello-cursor.png"), auto;
     // *{ border: 1px solid red; }
 
     .picture-container {

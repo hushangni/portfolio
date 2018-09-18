@@ -16,6 +16,7 @@
     }
 }
 .skills {
+    cursor: url("../../assets/shining.png"), auto;
     grid-area: skills;
     display: flex;
     align-items: center;
@@ -43,6 +44,10 @@
         margin-bottom: 10px;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            animation: pulse 1s infinite;
+        }
         .firebase {
             width: 60px;
             height: 60px;

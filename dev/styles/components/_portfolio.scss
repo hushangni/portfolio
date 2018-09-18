@@ -77,9 +77,10 @@
         a {
             color: white;
             margin: 10px;
-            padding: 10px;
+            padding: 15px;
+            @include fontSize(24);
             border: 2px solid white;
-            transition: 0.3s;
+            // transition: 0.2s ease-in;
 
             &:hover,
             &:focus {
