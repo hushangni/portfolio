@@ -104,6 +104,9 @@
 }
 
 .phrasebook {
+    .project-pic-container{
+        cursor: url("../../assets/phrasebook-cursor.png"), auto;
+    }
     cursor: url("../../assets/phrasebook-cursor.png"), auto;
 
     margin-top: 50px;
@@ -123,10 +126,9 @@
         .horizontal-line {
             right: 0;
         }
-        .project-name {
-            text-align: right;
 
-            &:hover {
+        &:hover {
+            .project-name {
                 background: #dac492;
                 background: -webkit-linear-gradient(122deg,#dac492,#9fc6c7);
                 background: -o-linear-gradient(122deg,#dac492 0,#9fc6c7 100%);
@@ -135,6 +137,10 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+        }
+
+        .project-name {
+            text-align: right;
         }
         .project-desc {
             text-align: right;
@@ -149,6 +155,7 @@
     cursor: url("../../assets/jj-cursor.png"), auto;
     margin-bottom: 180px;
     .project-pic-container {
+        cursor: url("../../assets/jj-cursor.png"), auto;
         float: right;
     }
 
@@ -170,15 +177,15 @@
     }
 
     .project-description-container {
-        .project-name {
-            &:hover {
-                background: #F8DA9F;
-                background: -webkit-linear-gradient(122deg,#F8DA9F,#F1BCA9);
-                background: -o-linear-gradient(122deg,#F8DA9F 0,#F1BCA9, 100%);
-                background: linear-gradient(328deg,#F8DA9F,#F1BCA9);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+        &:hover {
+            .project-name {
+                    background: #F8DA9F;
+                    background: -webkit-linear-gradient(122deg,#F8DA9F,#F1BCA9);
+                    background: -o-linear-gradient(122deg,#F8DA9F 0,#F1BCA9, 100%);
+                    background: linear-gradient(328deg,#F8DA9F,#F1BCA9);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
             }
         }
     }
@@ -187,6 +194,9 @@
 .beer-bible {
     cursor: url("../../assets/bb-cursor.png"), auto;
     margin-bottom: 150px;
+    .project-pic-container {
+        cursor: url("../../assets/bb-cursor.png"), auto;
+    }
     .device-pic {
         width: 58.75%;
         left: -30px;
@@ -209,10 +219,9 @@
         .horizontal-line {
             right: 0;
         }
-        .project-name {
-            text-align: right;
 
-            &:hover {
+        &:hover {
+            .project-name {
                 font-family: "neontubes";
                 @include fontSize(26);
                 color: scale-color(red, $lightness: 85%);
@@ -227,6 +236,9 @@
                 0 0 500px rgba(red,1),
                 0 0 1000px rgba(red,1);
             }
+        }
+        .project-name {
+            text-align: right;
         }
         .project-desc {
             text-align: right;
@@ -244,6 +256,7 @@
     margin-bottom: 180px;
     .project-pic-container {
         float: right;
+        cursor: url("../../assets/id-cursor.png"), auto;
     }
     .device-pic {
         right: 40px;
@@ -264,8 +277,8 @@
     }
 
     .project-description-container {
-        .project-name {
-            &:hover {
+        &:hover {
+            .project-name {
                 background: #fcca25;
                 background: -webkit-linear-gradient(122deg,#1D1E22,#fcca25);
                 background: -o-linear-gradient(122deg,#1D1E22, 0,#fcca25 100%);
@@ -280,6 +293,9 @@
 
 .sunshine {
     cursor: url("../../assets/ss-cursor.png"), auto;
+    .project-pic-container {
+        cursor: url("../../assets/ss-cursor.png"), auto;
+    }
     .device-pic {
         left: -10px;
         top: 60px;
@@ -300,6 +316,14 @@
 
         .horizontal-line {
             right: 0;
+        }
+
+        &:hover {
+            .project-name {
+                color: #F1D54A;
+                font-family: 'Playfair Display', serif;
+                @include fontSize(28.3);
+            }
         }
         .project-name {
             text-align: right;
