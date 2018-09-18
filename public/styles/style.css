@@ -262,6 +262,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   100% {
     opacity: 0; } }
 
+@font-face {
+  font-family: 'neontubes';
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-size: 16px;
   font-size: 1.6rem;
@@ -735,11 +742,13 @@ header {
     opacity: 1; }
 
 .phrasebook {
+  cursor: url("../../assets/phrasebook-cursor.png"), auto;
   margin-top: 50px; }
   .phrasebook .device-pic {
     left: 40px;
     top: 60px; }
   .phrasebook .project-pic {
+    cursor: url("../../assets/phrasebook-cursor.png"), auto;
     right: 38px;
     top: -45px; }
   .phrasebook .project-description-container {
@@ -749,12 +758,19 @@ header {
       right: 0; }
     .phrasebook .project-description-container .project-name {
       text-align: right; }
+      .phrasebook .project-description-container .project-name:hover {
+        background: #dac492;
+        background: linear-gradient(328deg, #dac492, #9fc6c7);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
     .phrasebook .project-description-container .project-desc {
       text-align: right; }
     .phrasebook .project-description-container h4 {
       text-align: right; }
 
 .juicy-jostle {
+  cursor: url("../../assets/jj-cursor.png"), auto;
   margin-bottom: 180px; }
   .juicy-jostle .project-pic-container {
     float: right; }
@@ -763,18 +779,27 @@ header {
     top: -60px;
     width: 53.75%; }
   .juicy-jostle .project-pic {
+    cursor: url("../../assets/jj-cursor.png"), auto;
     width: 37.5%;
     right: 180px;
     top: 240px; }
   .juicy-jostle .dots-pic {
     left: 140px; }
+  .juicy-jostle .project-description-container .project-name:hover {
+    background: #F8DA9F;
+    background: linear-gradient(328deg, #F8DA9F, #F1BCA9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .beer-bible {
+  cursor: url("../../assets/bb-cursor.png"), auto;
   margin-bottom: 150px; }
   .beer-bible .device-pic {
     width: 58.75%;
     left: -30px; }
   .beer-bible .project-pic {
+    cursor: url("../../assets/bb-cursor.png"), auto;
     width: 43.75%x;
     left: 370px;
     top: -50px; }
@@ -788,6 +813,12 @@ header {
       right: 0; }
     .beer-bible .project-description-container .project-name {
       text-align: right; }
+      .beer-bible .project-description-container .project-name:hover {
+        font-family: "neontubes";
+        font-size: 26px;
+        font-size: 2.6rem;
+        color: #ffd9d9;
+        text-shadow: 0 0 0 transparent, 0 0 10px red, 0 0 20px rgba(255, 0, 0, 0.5), 0 0 40px red, 0 0 100px red, 0 0 200px red, 0 0 300px red, 0 0 500px red, 0 0 1000px red; }
     .beer-bible .project-description-container .project-desc {
       text-align: right;
       float: right; }
@@ -795,6 +826,7 @@ header {
       text-align: right; }
 
 .initidate {
+  cursor: url("../../assets/id-cursor.png"), auto;
   margin-bottom: 180px; }
   .initidate .project-pic-container {
     float: right; }
@@ -803,37 +835,44 @@ header {
     top: 130px;
     width: 62.5%; }
   .initidate .project-pic {
+    cursor: url("../../assets/id-cursor.png"), auto;
     width: 31.25%;
     right: -20px;
     top: 0; }
   .initidate .dots-pic {
     left: 200px;
     top: -50px; }
+  .initidate .project-description-container .project-name:hover {
+    background: #fcca25;
+    background: linear-gradient(328deg, #1D1E22, #fcca25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
-.sunshine .device-pic {
-  left: -10px;
-  top: 60px; }
-
-.sunshine .project-pic {
-  right: 38px;
-  top: -30x; }
-
-.sunshine .dots-pic {
-  top: -55px;
-  left: 105px; }
-
-.sunshine .project-description-container {
-  top: 220px;
-  right: 0; }
-  .sunshine .project-description-container .horizontal-line {
+.sunshine {
+  cursor: url("../../assets/ss-cursor.png"), auto; }
+  .sunshine .device-pic {
+    left: -10px;
+    top: 60px; }
+  .sunshine .project-pic {
+    cursor: url("../../assets/ss-cursor.png"), auto;
+    right: 38px;
+    top: -30x; }
+  .sunshine .dots-pic {
+    top: -55px;
+    left: 105px; }
+  .sunshine .project-description-container {
+    top: 220px;
     right: 0; }
-  .sunshine .project-description-container .project-name {
-    text-align: right; }
-  .sunshine .project-description-container .project-desc {
-    text-align: right;
-    float: right; }
-  .sunshine .project-description-container h4 {
-    text-align: right; }
+    .sunshine .project-description-container .horizontal-line {
+      right: 0; }
+    .sunshine .project-description-container .project-name {
+      text-align: right; }
+    .sunshine .project-description-container .project-desc {
+      text-align: right;
+      float: right; }
+    .sunshine .project-description-container h4 {
+      text-align: right; }
 
 @media (max-width: 1200px) {
   .horizontal-line {
@@ -1406,6 +1445,25 @@ header {
             flex-direction: column; }
 
 @media (max-width: 600px) {
+  .contact {
+    height: 100%;
+    position: relative;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f0b5d5;
+    background: linear-gradient(328deg, #f0b5d5 0%, #98cddf 100%); }
+    .contact .background-overlay {
+      background-color: rgba(0, 0, 0, 0.12);
+      height: 100%;
+      width: 100vw; }
   .contact-title {
     margin-top: 20px;
     text-shadow: -4px 4px 0px rgba(198, 194, 216, 0.7), -8px 8px 0px rgba(240, 181, 213, 0.7);
@@ -1446,6 +1504,8 @@ header {
     .contact-form textarea {
       font-size: 16px;
       font-size: 1.6rem; }
+    .contact-form textarea {
+      height: 100px; }
     .contact-form .name-email-container {
       display: -webkit-box;
       display: -ms-flexbox;

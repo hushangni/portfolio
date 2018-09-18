@@ -5,13 +5,13 @@
     .section-title {
         color: white;
         text-shadow: -6px 6px 0px rgba(240,181,213,0.7),
-                 -12px 12px 0px rgba(198, 194, 216, 0.7);
+                    -12px 12px 0px rgba(198, 194, 216, 0.7);
         -webkit-text-stroke: 0.5px rgba(240,181,213,1);
         transition: all 0.4s ease-in;
 
         &:hover {
             text-shadow: 0px 0px 0px rgba(240,181,213,0.7),
-                 0px 0px 0px rgba(198, 194, 216, 0.7);
+                        0px 0px 0px rgba(198, 194, 216, 0.7);
             -webkit-text-stroke: 1px rgba(240,181,213,1);
         }
     }
@@ -104,12 +104,15 @@
 }
 
 .phrasebook {
+    cursor: url("../../assets/phrasebook-cursor.png"), auto;
+
     margin-top: 50px;
     .device-pic {
         left: 40px;
         top: 60px;
     }
     .project-pic {
+        cursor: url("../../assets/phrasebook-cursor.png"), auto;
         right: 38px;
         top: -45px;
     }
@@ -122,6 +125,16 @@
         }
         .project-name {
             text-align: right;
+
+            &:hover {
+                background: #dac492;
+                background: -webkit-linear-gradient(122deg,#dac492,#9fc6c7);
+                background: -o-linear-gradient(122deg,#dac492 0,#9fc6c7 100%);
+                background: linear-gradient(328deg,#dac492,#9fc6c7);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
         .project-desc {
             text-align: right;
@@ -133,10 +146,12 @@
 }
 
 .juicy-jostle {
+    cursor: url("../../assets/jj-cursor.png"), auto;
     margin-bottom: 180px;
     .project-pic-container {
         float: right;
     }
+
     .device-pic {
         right: -40px;
         top: -60px;
@@ -144,6 +159,7 @@
     }
 
     .project-pic {
+        cursor: url("../../assets/jj-cursor.png"), auto;
         width: 37.5%;
         right: 180px;
         top: 240px;
@@ -152,15 +168,31 @@
     .dots-pic {
         left: 140px;
     }
+
+    .project-description-container {
+        .project-name {
+            &:hover {
+                background: #F8DA9F;
+                background: -webkit-linear-gradient(122deg,#F8DA9F,#F1BCA9);
+                background: -o-linear-gradient(122deg,#F8DA9F 0,#F1BCA9, 100%);
+                background: linear-gradient(328deg,#F8DA9F,#F1BCA9);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
 }
 
 .beer-bible {
+    cursor: url("../../assets/bb-cursor.png"), auto;
     margin-bottom: 150px;
     .device-pic {
         width: 58.75%;
         left: -30px;
     }
     .project-pic {
+        cursor: url("../../assets/bb-cursor.png"), auto;
         width: 43.75%x;
         left: 370px;
         top: -50px;
@@ -179,6 +211,22 @@
         }
         .project-name {
             text-align: right;
+
+            &:hover {
+                font-family: "neontubes";
+                @include fontSize(26);
+                color: scale-color(red, $lightness: 85%);
+                text-shadow:
+                0 0 0 transparent,
+                0 0 10px red,
+                0 0 20px rgba(red,.5),
+                0 0 40px rgba(red,1),
+                0 0 100px rgba(red,1),
+                0 0 200px rgba(red,1),
+                0 0 300px rgba(red,1),
+                0 0 500px rgba(red,1),
+                0 0 1000px rgba(red,1);
+            }
         }
         .project-desc {
             text-align: right;
@@ -192,6 +240,7 @@
 }
 
 .initidate {
+    cursor: url("../../assets/id-cursor.png"), auto;
     margin-bottom: 180px;
     .project-pic-container {
         float: right;
@@ -203,6 +252,7 @@
     }
 
     .project-pic {
+        cursor: url("../../assets/id-cursor.png"), auto;
         width: 31.25%;
         right: -20px;
         top: 0;
@@ -212,14 +262,30 @@
         left: 200px;
         top: -50px;
     }
+
+    .project-description-container {
+        .project-name {
+            &:hover {
+                background: #fcca25;
+                background: -webkit-linear-gradient(122deg,#1D1E22,#fcca25);
+                background: -o-linear-gradient(122deg,#1D1E22, 0,#fcca25 100%);
+                background: linear-gradient(328deg,#1D1E22,#fcca25);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
 }
 
 .sunshine {
+    cursor: url("../../assets/ss-cursor.png"), auto;
     .device-pic {
         left: -10px;
         top: 60px;
     }
     .project-pic {
+        cursor: url("../../assets/ss-cursor.png"), auto;
         right: 38px;
         top: -30x;
     }
