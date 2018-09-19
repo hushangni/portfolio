@@ -1432,6 +1432,26 @@ header {
     .skill-item span {
       font-size: 4.3rem; } }
 
+.view-resume {
+  position: absolute;
+  color: white;
+  bottom: -7%;
+  background-color: #c6c2d8;
+  padding: 15px 20px;
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 20px;
+  font-size: 2rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+  .view-resume:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white; }
+
 .about-title {
   color: white;
   display: block;
@@ -1505,6 +1525,8 @@ header {
         text-shadow: 1px 1px 0px rgba(152, 205, 223, 0.7), 2px 2px 0px rgba(198, 194, 216, 0.7); }
 
 @media (max-width: 900px) {
+  .view-resume {
+    bottom: 15px; }
   .about .picture-container {
     width: 70%; }
     .about .picture-container .face-pic {
@@ -1526,7 +1548,13 @@ header {
     padding: 10px 0 80px 0px;
     width: 90%; } }
 
+@media (max-width: 810px) {
+  .view-resume {
+    bottom: 15px; } }
+
 @media (max-width: 650px) {
+  .view-resume {
+    bottom: 25px; }
   .about-title {
     width: 97%;
     text-shadow: 4px 4px 0px rgba(152, 205, 223, 0.7), 8px 8px 0px rgba(198, 194, 216, 0.7);
