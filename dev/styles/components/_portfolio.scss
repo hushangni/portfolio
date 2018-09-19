@@ -72,7 +72,7 @@
 }
 
 .dots-pic {
-    width: 43.75%;
+    width: 44%;
 }
 
 .project-pic {
@@ -129,8 +129,11 @@
         cursor: url("../../assets/phrasebook-cursor.png"), auto;
     }
     cursor: url("../../assets/phrasebook-cursor.png"), auto;
-
     margin-top: 50px;
+
+    .dots-pic {
+        top: -7px;
+    }
     .device-pic {
         left: 40px;
         top: 60px;
@@ -241,8 +244,8 @@
         top: -50px;
     }
     .dots-pic {
-        top: 150px;
-        left: 200px;
+        top: 165px;
+        left: 210px;
     }
 
     .project-description-container {
@@ -311,7 +314,7 @@
     }
 
     .dots-pic {
-        left: 200px;
+        left: 190px;
         top: -50px;
     }
 
@@ -353,8 +356,8 @@
     }
 
     .dots-pic {
-        top: -55px;
-        left: 105px;
+        top: -60px;
+        left: 125px;
     }
     .project-description-container {
         top: 220px;
@@ -613,6 +616,10 @@
         .project-description-container {
             top: 150px;
         }
+
+        .dots-pic {
+            left: 0px;
+        }
     }
 
     .sunshine {
@@ -681,7 +688,7 @@
             top: -40px;
         }
         .project-description-container {
-            top: 140px;
+            top: 150px;
         }
     }
 

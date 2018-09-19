@@ -945,7 +945,7 @@ header {
   width: 400px; }
 
 .dots-pic {
-  width: 43.75%; }
+  width: 44%; }
 
 .project-pic {
   width: 40.63%;
@@ -995,6 +995,8 @@ header {
   margin-top: 50px; }
   .phrasebook .project-pic-container {
     cursor: url("../../assets/phrasebook-cursor.png"), auto; }
+  .phrasebook .dots-pic {
+    top: -7px; }
   .phrasebook .device-pic {
     left: 40px;
     top: 60px; }
@@ -1066,8 +1068,8 @@ header {
     left: 370px;
     top: -50px; }
   .beer-bible .dots-pic {
-    top: 150px;
-    left: 200px; }
+    top: 165px;
+    left: 210px; }
   .beer-bible .project-description-container {
     top: 220px;
     right: 0; }
@@ -1107,7 +1109,7 @@ header {
     right: -20px;
     top: 0; }
   .initidate .dots-pic {
-    left: 200px;
+    left: 190px;
     top: -50px; }
   .initidate .project-description-container .project-links {
     position: absolute;
@@ -1132,8 +1134,8 @@ header {
     right: 38px;
     top: -30x; }
   .sunshine .dots-pic {
-    top: -55px;
-    left: 105px; }
+    top: -60px;
+    left: 125px; }
   .sunshine .project-description-container {
     top: 220px;
     right: 0; }
@@ -1270,6 +1272,8 @@ header {
     width: 70%; }
   .initidate .project-description-container {
     top: 150px; }
+  .initidate .dots-pic {
+    left: 0px; }
   .sunshine .dots-pic {
     top: 0; }
   .sunshine .device-pic {
@@ -1307,7 +1311,7 @@ header {
     width: 95%;
     top: -40px; }
   .beer-bible .project-description-container {
-    top: 140px; }
+    top: 150px; }
   .initidate .device-pic {
     top: 30px;
     width: 90%; }
