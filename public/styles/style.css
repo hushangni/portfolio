@@ -925,6 +925,21 @@ header {
 
 .project-description-container {
   top: 220px; }
+  .project-description-container .project-links {
+    width: 100%; }
+    .project-description-container .project-links a {
+      color: grey;
+      margin: 5px;
+      margin-bottom: 15px;
+      padding: 5px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      border: 2px solid grey; }
+      .project-description-container .project-links a:hover, .project-description-container .project-links a:focus {
+        -webkit-box-shadow: inset 12em 0 0 0 grey;
+                box-shadow: inset 12em 0 0 0 grey;
+        background-color: grey;
+        color: white; }
 
 .project-desc {
   width: 400px; }
@@ -990,6 +1005,10 @@ header {
   .phrasebook .project-description-container {
     top: 220px;
     right: 0; }
+    .phrasebook .project-description-container .project-links {
+      position: absolute;
+      top: 35px;
+      right: -70px; }
     .phrasebook .project-description-container .horizontal-line {
       right: 0; }
     .phrasebook .project-description-container:hover .project-name {
@@ -1022,6 +1041,10 @@ header {
     top: 240px; }
   .juicy-jostle .dots-pic {
     left: 140px; }
+  .juicy-jostle .project-description-container .project-links {
+    position: absolute;
+    top: 35px;
+    left: 180px; }
   .juicy-jostle .project-description-container:hover .project-name {
     background: #F8DA9F;
     background: linear-gradient(328deg, #F8DA9F, #F1BCA9);
@@ -1048,6 +1071,10 @@ header {
   .beer-bible .project-description-container {
     top: 220px;
     right: 0; }
+    .beer-bible .project-description-container .project-links {
+      position: absolute;
+      top: 35px;
+      left: 220px; }
     .beer-bible .project-description-container .horizontal-line {
       right: 0; }
     .beer-bible .project-description-container:hover .project-name {
@@ -1082,6 +1109,10 @@ header {
   .initidate .dots-pic {
     left: 200px;
     top: -50px; }
+  .initidate .project-description-container .project-links {
+    position: absolute;
+    top: 35px;
+    left: 130px; }
   .initidate .project-description-container:hover .project-name {
     background: #fcca25;
     background: linear-gradient(328deg, #1D1E22, #fcca25);
@@ -1106,6 +1137,10 @@ header {
   .sunshine .project-description-container {
     top: 220px;
     right: 0; }
+    .sunshine .project-description-container .project-links {
+      position: absolute;
+      top: 35px;
+      left: 100px; }
     .sunshine .project-description-container .horizontal-line {
       right: 0; }
     .sunshine .project-description-container:hover .project-name {
@@ -1125,7 +1160,9 @@ header {
   .horizontal-line {
     width: 410px; }
   .project-description-container h4 {
-    width: 400px; } }
+    width: 400px; }
+  .beer-bible .project-description-container .project-links {
+    left: 80px; } }
 
 @media (max-width: 1040px) {
   .horizontal-line {
@@ -1134,10 +1171,13 @@ header {
     width: 280px; }
   .project-description-container .project-desc {
     width: 280px; }
-  .beer-bible h4,
-  .sunshine h4,
-  .phrasebook h4 {
-    position: relative; } }
+  .project-links {
+    display: none; }
+  .project-pic-container .overlay {
+    opacity: 1;
+    background-color: transparent; }
+    .project-pic-container .overlay a {
+      background-color: rgba(0, 0, 0, 0.4); } }
 
 @media (max-width: 900px) {
   .horizontal-line {
@@ -1413,7 +1453,7 @@ header {
       position: absolute; }
     .about .picture-container .face-pic {
       right: 50%;
-      top: 0px;
+      top: 20px;
       width: 60%; }
     .about .picture-container .dots-pic {
       width: 100%;
@@ -1774,8 +1814,8 @@ header {
     .contact-form textarea {
       height: 100px; }
     .contact-form .mailto {
-      font-size: 18px;
-      font-size: 1.8rem; }
+      font-size: 16px;
+      font-size: 1.6rem; }
     .contact-form .name-email-container {
       display: -webkit-box;
       display: -ms-flexbox;

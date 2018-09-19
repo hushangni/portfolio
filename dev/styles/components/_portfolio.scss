@@ -45,6 +45,26 @@
 
 .project-description-container {
     top: 220px;
+    .project-links {
+        width: 100%;
+        a {
+            color: grey;
+            margin: 5px;
+            margin-bottom: 15px;
+            padding: 5px;
+            @include fontSize(18);
+            border: 2px solid grey;
+            // transition: 0.2s ease-in;
+
+            &:hover,
+            &:focus {
+                box-shadow: inset 12em 0 0 0 grey;
+                background-color: grey;
+                color: white;
+            }
+        }
+
+    }
 }
 
 .project-desc {
@@ -124,6 +144,12 @@
         top: 220px;
         right: 0;
 
+        .project-links {
+            position: absolute;
+            top: 35px;
+            right: -70px;
+        }
+
         .horizontal-line {
             right: 0;
         }
@@ -178,6 +204,12 @@
     }
 
     .project-description-container {
+        .project-links {
+            position: absolute;
+            top: 35px;
+            left: 180px;
+        }
+
         &:hover {
             .project-name {
                     background: #F8DA9F;
@@ -216,6 +248,12 @@
     .project-description-container {
         top: 220px;
         right: 0;
+        .project-links {
+            position: absolute;
+            top: 35px;
+            left: 220px;
+        }
+
 
         .horizontal-line {
             right: 0;
@@ -278,6 +316,13 @@
     }
 
     .project-description-container {
+
+        .project-links {
+            position: absolute;
+            top: 35px;
+            left: 130px;
+        }
+
         &:hover {
             .project-name {
                 background: #fcca25;
@@ -315,6 +360,13 @@
         top: 220px;
         right: 0;
 
+        .project-links {
+            position: absolute;
+            top: 35px;
+            left: 100px;
+        }
+
+
         .horizontal-line {
             right: 0;
         }
@@ -349,6 +401,14 @@
             width: 400px;
         }
     }
+
+    .beer-bible {
+        .project-description-container {
+            .project-links {
+                left: 80px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1040px) {
@@ -366,11 +426,22 @@
         }
     }
 
-    .beer-bible h4,
-    .sunshine h4,
-    .phrasebook h4{
-        position: relative;
+    .project-links {
+        display: none;
     }
+
+
+    .project-pic-container {
+        .overlay{
+            opacity: 1;
+            background-color: transparent;
+            a {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+
 }
 
 @media (max-width: 900px) {
