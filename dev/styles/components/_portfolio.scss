@@ -264,19 +264,8 @@
 
         &:hover {
             .project-name {
-                font-family: "neontubes";
                 @include fontSize(26);
                 color: scale-color(red, $lightness: 85%);
-                text-shadow:
-                0 0 0 transparent,
-                0 0 10px red,
-                0 0 20px rgba(red,.5),
-                0 0 40px rgba(red,1),
-                0 0 100px rgba(red,1),
-                0 0 200px rgba(red,1),
-                0 0 300px rgba(red,1),
-                0 0 500px rgba(red,1),
-                0 0 1000px rgba(red,1);
             }
         }
         .project-name {
