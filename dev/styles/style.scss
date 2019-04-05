@@ -30,6 +30,12 @@ svg { max-height: 100%; }
 img {
     width: 100%;
     display: block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img[data-src] {
+    opacity: 0;
 }
 
 ul {

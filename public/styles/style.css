@@ -1930,7 +1930,13 @@ svg {
 
 img {
   width: 100%;
-  display: block; }
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+img[data-src] {
+  opacity: 0; }
 
 ul {
   list-style: none; }
