@@ -19,6 +19,18 @@
     }
 }
 
+.face-pic {
+    background-image: url(../../assets/tilt-smile.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 175px;
+    height: 225px;
+}
+
+.about:hover .face-pic{
+    background-image: url(../../assets/side-eye-smile.jpg);
+}
+
 .about-title {
     color: white;
     display: block;
@@ -40,16 +52,12 @@
     grid-area: about;
     height: 100%;
     cursor: url("../../assets/hello-cursor.png"), auto;
-    // *{ border: 1px solid red; }
 
     .picture-container {
         width: 40%;
         float: right;
         position: relative;
-
-        * {
-            position: absolute;
-        }
+        height: 100%;
 
         .face-pic {
             right: 50%;
@@ -61,6 +69,7 @@
             width: 100%;
             top: -20px;
             left: -100px;
+            position: absolute;
         }
     }
 
@@ -133,12 +142,12 @@
     .about {
 
         .picture-container {
-            width: 70%;
 
             .face-pic {
-                right: 100px;
-                top: 0px;
-                width: 45%;
+                width: 200px;
+                height: 250px;
+                position: relative;
+                left: -60px;
             }
 
             .dots-pic {
@@ -172,6 +181,18 @@
     }
 }
 
+@media (max-width: 700px) {
+    .about {
+        .picture-container {
+            .face-pic {
+                width: 150px;
+                height: 200px;
+                left: -10px;
+            }
+        }
+    }
+}
+
 @media (max-width: 650px) {
     .view-resume {
         bottom: 25px;
@@ -185,12 +206,11 @@
     .about {
 
         .picture-container {
-            width: 80%;
-
             .face-pic {
-                right: 50px;
+                left: -40px;
                 top: 0px;
-                width: 45%;
+                width: 125px;
+                height: 175px;
             }
 
             .dots-pic {
@@ -225,12 +245,12 @@
         width: 93%;
     }
     .about {
-
         .picture-container {
-            width: 95%;
-
             .face-pic {
-                right: 20px;
+                width: 100px;
+                height: 150px;
+                right: 0px;
+                left: initial;
             }
         }
 

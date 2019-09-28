@@ -113,6 +113,7 @@
 
 .project-pic-container {
     position: relative;
+    height: 100%;
     width: 800px;
 
     &:hover {
@@ -121,6 +122,147 @@
 
     &:hover .overlay{
         opacity: 1;
+    }
+}
+
+.retro-api {
+    margin-bottom: 180px;
+    .project-pic-container {
+        float: right;
+    }
+
+    .device-pic {
+        right: -40px;
+        top: -60px;
+        width: 53.75%;
+    }
+
+    .project-pic {
+        width: 37.5%;
+        right: 180px;
+        top: 240px;
+    }
+
+    .dots-pic {
+        left: 140px;
+    }
+
+    .project-description-container {
+        .project-links {
+            position: absolute;
+            top: 35px;
+            left: 147px;
+        }
+
+        &:hover {
+            .project-name {
+                    background: #1F1F87;
+                    background: -webkit-linear-gradient(122deg,#1F1F87,#491574);
+                    background: -o-linear-gradient(122deg,#1F1F87 0,#491574, 100%);
+                    background: linear-gradient(328deg,#1F1F87,#491574);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+.js-101 {
+    margin-top: 50px;
+
+    .dots-pic {
+        top: -7px;
+    }
+    .device-pic {
+        left: 40px;
+        top: 60px;
+    }
+    .project-pic {
+        right: 38px;
+        top: 17px;
+    }
+    .project-description-container {
+        top: 220px;
+        right: 0;
+
+        .project-links {
+            position: absolute;
+            top: 35px;
+            right: -115px;
+        }
+
+        .horizontal-line {
+            right: 0;
+        }
+
+        &:hover {
+            .project-name {
+                background: #EA593E;
+                background: -webkit-linear-gradient(122deg,#EA593E,#DEEBE7);
+                background: -o-linear-gradient(122deg,#EA593E 0,#DEEBE7 100%);
+                background: linear-gradient(328deg,#EA593E,#DEEBE7);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .project-name {
+            text-align: right;
+        }
+        .project-desc {
+            text-align: right;
+        }
+        h4 {
+            text-align: right;
+        }
+    }
+}
+
+.app-app {
+    margin-bottom: 180px;
+    .project-pic-container {
+        float: right;
+
+    }
+    .device-pic {
+        right: 0px;
+        top: 60px;
+        width: 62.5%;
+    }
+
+    .project-pic {
+
+        width: 31.25%;
+        right: -20px;
+        top: 0;
+    }
+
+    .dots-pic {
+        left: 190px;
+        top: -50px;
+    }
+
+    .project-description-container {
+
+        .project-links {
+            position: absolute;
+            top: 35px;
+            left: 130px;
+        }
+
+        &:hover {
+            .project-name {
+                background: #4E57CA;
+                background: -webkit-linear-gradient(122deg,#4E57CA,#4E57CA);
+                background: -o-linear-gradient(122deg,#4E57CA, 0,#4E57CA 100%);
+                background: linear-gradient(328deg,#4E57CA,#4E57CA);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     }
 }
 
@@ -454,11 +596,36 @@
         width: 100%;
     }
 
-    .phrasebook {
+    .retro-api {
+        .device-pic {
+            right: -10px;
+            top: -30px;
+        }
+
+        .project-pic {
+            right: 120px;
+            top: 160px;
+        }
+
+        .dots-pic {
+            left: 140px;
+            top: -20px;
+        }
+
+        .project-description-container {
+            h4 {
+                width: 230px;
+            }
+        }
+    }
+
+    .phrasebook,
+    .js-101 {
         .project-description-container {
             top: 180px;
         }
     }
+
     .juicy-jostle {
         .device-pic {
             right: -40px;
@@ -502,7 +669,8 @@
 
     }
 
-    .initidate {
+    .initidate,
+    .app-app {
         margin-bottom: 120px;
         .project-pic-container {
             float: right;
@@ -541,7 +709,7 @@
         margin-bottom: 40px;
     }
     .project {
-        margin: 50px 0 60px;
+        margin: 50px 0 100px;
         height: 350px;
     }
     .project-pic {
@@ -560,7 +728,20 @@
         }
     }
 
-    .phrasebook {
+    .retro-api {
+        .dots-pic {
+            left: 10px;
+        }
+        .project-description-container {
+            top: 130px;
+        }
+        .device-pic {
+            width: 65%;
+        }
+    }
+
+    .phrasebook,
+    .js-101 {
         .device-pic {
             left: 40px;
             top: 10px;
@@ -597,7 +778,8 @@
         }
     }
 
-    .initidate {
+    .initidate,
+    .app-app {
         .device-pic {
             top: 30px;
             width: 70%;
@@ -642,7 +824,22 @@
         margin: 50px 0 60px;
         height: 450px;
     }
-    .phrasebook {
+
+    .retro-api {
+        .dots-pic {
+            left: 0px;
+            width: 70%;
+        }
+        .project-description-container {
+            top: 150px;
+        }
+        .device-pic {
+            width: 90%;
+        }
+    }
+
+    .phrasebook,
+    .js-101 {
         .device-pic {
             width: 90%;
         }
@@ -681,7 +878,8 @@
         }
     }
 
-    .initidate {
+    .initidate,
+    .app-app {
         .device-pic {
             top: 30px;
             width: 90%;

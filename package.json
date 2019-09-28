@@ -11,7 +11,6 @@
     "babelify": "^8.0.0",
     "browser-sync": "^2.24.7",
     "browserify": "^16.2.2",
-    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-notify": "^3.2.0",
@@ -21,7 +20,9 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

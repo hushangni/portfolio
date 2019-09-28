@@ -172,6 +172,8 @@ header {
             transform: translate(-50%,-50%);
             opacity: 0;
             transition: .25s 0s ease-in-out;
+            text-align: center;
+            text-transform: uppercase;
         }
 
         a {
@@ -186,6 +188,15 @@ header {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration: none;
+            transition: all 2s linear;
+
+            &:hover {
+                background: linear-gradient(328deg, rgba(132,176,211,1) 0%, rgba(191,141,193,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dac492",endColorstr="#9fc6c7",GradientType=1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-decoration: none;
+            }
         }
     }
 

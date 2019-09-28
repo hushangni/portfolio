@@ -1,7 +1,7 @@
 
 .skills-title {
     display: block;
-    margin: 0 auto 20px;
+    margin: 100px auto 20px;
     padding-top: 0;
     color: white;
     text-shadow: -6px 6px 0px rgba(198, 194, 216, 0.7),
@@ -26,6 +26,10 @@
     background: -moz-linear-gradient(328deg, #D8BCD6 0%, rgba(152,205,223,1) 100%);
     background: -webkit-linear-gradient(328deg, #D8BCD6 0%, rgba(152,205,223,1) 100%);
     background: linear-gradient(328deg, #D8BCD6 0%, rgba(152,205,223,1) 100%);
+
+    .redux {
+        width: 54px;
+    }
 }
 
 .skills-list{
