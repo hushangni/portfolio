@@ -1536,7 +1536,7 @@ header {
   background: -o-linear-gradient(122deg, #D8BCD6 0%, #98cddf 100%);
   background: linear-gradient(328deg, #D8BCD6 0%, #98cddf 100%); }
   .skills .redux {
-    width: 54px; }
+    width: 42px; }
 
 .skills-list {
   width: 100%;
@@ -1639,8 +1639,8 @@ header {
   background-image: url(../../assets/tilt-smile.jpg);
   background-size: cover;
   background-position: center;
-  width: 175px;
-  height: 225px; }
+  width: 195px;
+  height: 235px; }
 
 .about:hover .face-pic {
   background-image: url(../../assets/side-eye-smile.jpg); }
@@ -1668,10 +1668,6 @@ header {
     float: right;
     position: relative;
     height: 100%; }
-    .about .picture-container .face-pic {
-      right: 50%;
-      top: 20px;
-      width: 60%; }
     .about .picture-container .dots-pic {
       width: 100%;
       top: -20px;
@@ -2075,6 +2071,12 @@ header {
     color: white;
     font-size: 18px;
     font-size: 1.8rem; } }
+
+@media (max-width: 400px) {
+  .project-pic-container .device-pic .overlay a {
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 12px 7px; } }
 
 .thank-you {
   position: relative;

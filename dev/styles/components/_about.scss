@@ -23,8 +23,8 @@
     background-image: url(../../assets/tilt-smile.jpg);
     background-size: cover;
     background-position: center;
-    width: 175px;
-    height: 225px;
+    width: 195px;
+    height: 235px;
 }
 
 .about:hover .face-pic{
@@ -59,11 +59,10 @@
         position: relative;
         height: 100%;
 
-        .face-pic {
-            right: 50%;
-            top: 20px;
-            width: 60%;
-        }
+        // .face-pic {
+        //     right: 50%;
+        //     top: 20px;
+        // }
 
         .dots-pic {
             width: 100%;
