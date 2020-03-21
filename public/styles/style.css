@@ -722,7 +722,8 @@ header {
     width: 60vw;
     max-width: 700px;
     z-index: 2;
-    min-width: 280px; }
+    min-width: 280px;
+    max-height: inital; }
   header #floatdots-container {
     background: transparent;
     position: absolute;
@@ -1540,8 +1541,10 @@ header {
 
 .skills-list {
   width: 100%;
+  display: -ms-grid;
   display: grid;
   color: white;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 50px;
   padding: 8% 0; }
@@ -1591,6 +1594,7 @@ header {
 
 @media (max-width: 650px) {
   .skills-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr; }
   .skills-list li:last-child {
     display: none; }
@@ -1600,6 +1604,7 @@ header {
 
 @media (max-width: 450px) {
   .skills-list {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr; }
   .skills-list li:last-child {
     display: -webkit-box;
@@ -2149,9 +2154,6 @@ html {
 body {
   scroll-behavior: smooth;
   overflow-x: hidden; }
-
-svg {
-  max-height: 100%; }
 
 img {
   width: 100%;
